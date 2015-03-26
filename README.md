@@ -63,6 +63,8 @@
         > grunt protractor
 
 =======
+=======
+
 ### Issues:
 
 1. If you get the message `Error: EACCES` running the command `yo angular-require`, run the following command
@@ -91,3 +93,4 @@
 
         - 'gem update --system'
         - 'gem install compass'
+=======
