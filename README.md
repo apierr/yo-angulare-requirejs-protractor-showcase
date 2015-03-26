@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/antonio-pierro/yo-angulare-requirejs-protractor-showcase.svg)](https://travis-ci.org/antonio-pierro/yo-angulare-requirejs-protractor-showcase)
+
 ## Yeoman Angular RequireJs showcase
 
 ### Setup
@@ -23,8 +25,7 @@
 
 ### Configure Travis CI 
 
-1. Update the Node.js version according the version of your local machine
-
+1. Update the Node.js version according the version of your local machine.
 
 ### Configure protractor with grunt
 
@@ -61,6 +62,7 @@
 
         > grunt protractor
 
+=======
 ### Issues:
 
 1. If you get the message `Error: EACCES` running the command `yo angular-require`, run the following command
