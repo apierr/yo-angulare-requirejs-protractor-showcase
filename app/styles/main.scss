@@ -12,6 +12,13 @@ body {
   padding: 0;
 }
 
+button.red:after {
+  content: 'added class';
+}
+button:after {
+  content: ' class';
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
