@@ -4,12 +4,12 @@
     define(['angular'], function (angular) {
     'use strict';
 
-    return function ($scope) {
+    return ['$scope', function ($scope) {
             $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
             'Karma'
             ];
-        }
+        }]
     });
 }(this.define));
