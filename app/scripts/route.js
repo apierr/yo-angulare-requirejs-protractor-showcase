@@ -1,17 +1,17 @@
 (function (define) {
     define([
         'controllers/main', 
-        'controllers/about',
-    ], function (MainCtrl, AboutCtrl) {
+        'controllers/about'
+    ], function (mainCtrl, aboutCtrl) {
         return function ($routeProvider) {
             $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
+                controller: mainCtrl
             })
             .when('/about', {
                 templateUrl: 'views/about.html',
-                controller: 'AboutCtrl'
+                controller: aboutCtrl
             })
             .otherwise({
                 redirectTo: '/'

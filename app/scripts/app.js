@@ -13,8 +13,7 @@ define([
    * Main module of the application.
    */
   return angular
-    .module('yoAngulareRequirejsProtractorShowcaseApp', ['yoAngulareRequirejsProtractorShowcaseApp.controllers.MainCtrl',
-'yoAngulareRequirejsProtractorShowcaseApp.controllers.AboutCtrl',
+    .module('yoAngulareRequirejsProtractorShowcaseApp', [
 /*angJSDeps*/
     'ngCookies',
     'ngResource',

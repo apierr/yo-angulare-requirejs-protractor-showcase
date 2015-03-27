@@ -1,19 +1,15 @@
-define(['angular'], function (angular) {
-  'use strict';
 
-  /**
-   * @ngdoc function
-   * @name yoAngulareRequirejsProtractorShowcaseApp.controller:MainCtrl
-   * @description
-   * # MainCtrl
-   * Controller of the yoAngulareRequirejsProtractorShowcaseApp
-   */
-  angular.module('yoAngulareRequirejsProtractorShowcaseApp.controllers.MainCtrl', [])
-    .controller('MainCtrl', function ($scope) {
-      $scope.awesomeThings = [
-        'HTML5 Boilerplate',
-        'AngularJS',
-        'Karma'
-      ];
+
+(function (define) {
+    define(['angular'], function (angular) {
+    'use strict';
+
+    return function ($scope) {
+            $scope.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+            ];
+        }
     });
-});
+}(this.define));
