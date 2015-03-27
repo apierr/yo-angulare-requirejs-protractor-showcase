@@ -1,9 +1,7 @@
 /*jshint unused: vars */
 define([
-  'angular', 
-  'controllers/main', 
-  'controllers/about',
-  'route']/*deps*/, function (angular, MainCtrl, AboutCtrl, route)/*invoke*/ {
+  'angular',
+  'route']/*deps*/, function (angular, route)/*invoke*/ {
   'use strict';
 
   /**

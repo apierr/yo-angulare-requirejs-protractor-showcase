@@ -1,6 +1,8 @@
 (function (define) {
     define([
-    ], function (argument) {
+        'controllers/main', 
+        'controllers/about',
+    ], function (MainCtrl, AboutCtrl) {
         return function ($routeProvider) {
             $routeProvider
             .when('/', {
