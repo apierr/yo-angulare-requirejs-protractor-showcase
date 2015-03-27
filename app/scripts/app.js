@@ -1,5 +1,7 @@
 /*jshint unused: vars */
-define(['angular', 'controllers/main', 'controllers/about']/*deps*/, function (angular, MainCtrl, AboutCtrl)/*invoke*/ {
+define([
+  'angular',
+  'route']/*deps*/, function (angular, route)/*invoke*/ {
   'use strict';
 
   /**
@@ -11,8 +13,7 @@ define(['angular', 'controllers/main', 'controllers/about']/*deps*/, function (a
    * Main module of the application.
    */
   return angular
-    .module('yoAngulareRequirejsProtractorShowcaseApp', ['yoAngulareRequirejsProtractorShowcaseApp.controllers.MainCtrl',
-'yoAngulareRequirejsProtractorShowcaseApp.controllers.AboutCtrl',
+    .module('yoAngulareRequirejsProtractorShowcaseApp', [
 /*angJSDeps*/
     'ngCookies',
     'ngResource',
@@ -21,18 +22,5 @@ define(['angular', 'controllers/main', 'controllers/about']/*deps*/, function (a
     'ngAnimate',
     'ngTouch'
   ])
-    .config(function ($routeProvider) {
-      $routeProvider
-        .when('/', {
-          templateUrl: 'views/main.html',
-          controller: 'MainCtrl'
-        })
-        .when('/about', {
-          templateUrl: 'views/about.html',
-          controller: 'AboutCtrl'
-        })
-        .otherwise({
-          redirectTo: '/'
-        });
-    });
+    .config(route);
 });
